@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  
+  <title>Teddy Cash - Decentralized Borrowing Protocol on Avalanche</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"  />
+  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel=" stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="font-sans">
+  
+
+<div id="content">  
+<div>
+
+<article>
+
+
+  <!-- hero and navigation -->
+  <header class="text-gray-800 bg-gray-50 px-6 lg:px-12 pt-8 pb-20 lg:pb-32 relative bg-cover">
+    <div class="relative z-10">
+      <!-- navigation -->
+      <div class="max-w-screen-xl mx-auto flex justify-between items-center relative" x-data="{ mobileMenu: false}">
+        <a href="#">
+          <img class="h-16" src="teddy-cash-final.png" alt="Teddy Cash Logo">          
+        </a>        
+        <div class="hidden">
+        <nav class="hidden md:flex flex-col justify-center items-center p-8 md:p-0 space-y-4 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-8 font-semibold absolute top-16 md:top-0 left-0 w-full md:w-auto  md:relative bg-gray-200 md:bg-transparent">
+          <a href="#" class="hover:opacity-70">Home</a>
+          <a href="#" class="hover:opacity-70">Contact</a>
+        </nav>
+        <button class="w-9 p-1 rounded-md text-green-600 block md:hidden relative z-30 mt-1" @click="mobileMenu = !mobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-95"
+          class="absolute top-10 inset-x-0 py-2 ransition transform origin-top-right z-50 w-full md:hidden">
+              <nav class="rounded-lg shadow-lg bg-white p-3 transform">
+                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Home</a>
+                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Services</a>
+                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Pricing</a>
+                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Blog</a>
+                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Contact</a>
+                <a href="#" class="hover:opacity-70 block px-6 py-3 font-bold border-blue-50 border-b">Sign in</a>
+              </nav>
+          </div>
+        </div>
+      </div>
+      <!--/ navigation -->
+      
+      <!-- hero text -->
+      <div class="max-w-screen-md mx-auto text-left md:text-center mt-20 xl:mt-32 mb-20 xl:mb-32">
+        <h1 class="text-2xl md:text-3xl lg:text-5xl text-gray-800 font-medium">
+          Teddy Cash is a decentralized borrowing protocol with interest-free loans.
+
+        </h1>
+        <p class="text-xl lg:text-2xl text-gray-700 mt-6 lg:mt-10 max-w-xl mx-auto">Teddy Cash is a fork of the Liquity protocol for the Avalanche C-Chain.</p>
+        
+        <div class="flex flex-row space-x-2 md:justify-center mt-6 lg:mt-12">
+          <a href="#" class="inline-block bg-green-700 font-semibold rounded-md py-4 px-5 lg:px-8 text-white mt-6">Launch App</a>
+          <a href="#" class="inline-flex bg-transparent font-semibold rounded-md py-4 px-5 lg:px-8 text-gray-800 mt-6 space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>
+              Docs
+            </span>
+          </a>
+        </div>
+      </div>
+      <!--/ hero text-->
+
+      <!-- hero image -->
+      <div class="max-w-screen-lg mx-auto mb-12 lg:mb-24 hidden">
+        <img src="/images/minimal/xps-dpbXgTh0Lac-unsplash.jpg" alt="image placeholder" class="rounded-lg sahdow-lg  md:shadow-2xl">
+      </div>
+      <!--/ hero image-->
+
+      <p class="text-center text-gray-400">
+        powered by:
+      </p>
+      <!-- logos -->
+      <div class="max-w-screen-lg mx-auto px-6 lg:px-8 xl:px-4 grid grid-cols-2 space-y-5 lg:grid-cols-5 gap-6 xl:gap-x-12">
+        <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="avalanche-logo.svg" alt="avalanche logo">
+        <img class="h-8 md:h-12 p-0 self-end justify-self-center opacity-75" src="liquity.svg" alt="liquity logo">
+        <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="metamask-logo.svg" alt="metamask logo">
+        <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="pangolin-logo.svg" alt="pangolin logo">
+
+      </div>
+      <!--/ logos -->
+          
+  </header>
+  <!--/ hero and navigation -->
+
+  <!-- content block -->
+  <div class="bg-white px-6 lg:px-8 py-20 lg:py-32">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-8 lg:gap-24 xl:gap-32 md:items-center">
+      <div class="col-span-2 md:col-span-1 flex flex-row space-x-2">
+        <img src="teddy-cash-final.png" alt="image placeholder" class="h-64 rounded-lg align-center pl-24">
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-medium mb-6 lg:mb-8">TSD: Algorithmic USD Stablecoin</h2>
+        <p class="text-xl lg:text-2xl text-gray-700">TSD is minted when users deposit AVAX as collateral and open troves. The mechanism for its price stability is described in detail in the excellent Liquity docs.</p>
+      </div>
+    </div>
+  </div>
+  <!--/ content block -->
+
+  <!-- content block -->
+  <div class="bg-gray-100 px-6 lg:px-8 py-20 lg:py-32">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-8 lg:gap-24 xl:gap-32 md:items-center">
+      <div class="col-span-2 md:col-span-1 flex flex-row space-x-2 order-1 md:order-2">
+        <img src="teddy-cash-final-unicorn.png" alt="image placeholder" class="h-64 rounded-lg align-center pl-24">
+      </div>
+      <div class="col-span-2 md:col-span-1 order-2 md:order-1">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-medium mb-6 lg:mb-8">TEDDY: Growth Token</h2>
+        <p class="text-xl lg:text-2xl text-gray-700">
+          Stake TEDDYs and earn TSD everytime someone opens a trove. Earn AVAX everytime someone redeems TSD. 
+Governance token for future versions of the protocol (the current smart contracts are immutable). 
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- content block -->
+
+  <!-- content block -->
+  <div class="bg-gray-50 px-6 lg:px-8 py-20 lg:py-32">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-4 gap-8 lg:gap-24 xl:gap-32 md:items-center">      
+      <div class="col-span-1 md:col-span-1">
+      </div>
+      <div class="col-span-2 md:col-span-2">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-medium mb-6 lg:mb-8">A Decentralized &  Immutable Protocol</h2>
+        <p class="text-xl lg:text-2xl text-gray-700">Teddy Cash works without governance. The smart contracts are immutable. No central UI necessary. </p>
+      </div>
+    </div>
+  </div>
+  <!--/ content block -->
+
+  <div class="hidden bg-white text-gray-700 px-6 lg:px-8 py-20 lg:py-32">
+    <div class="max-w-screen-md mx-auto text-left md:text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-4xl text-gray-800 font-medium mb-6">Enjoy JobBoard's unique online features</h2>
+      <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+        <div class="text-center md:border-r-2 border-gray-100 p-8 lg:p-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span class="block font-semibold text-4xl mb-2 text-gray-800">221</span>
+          <span class="text-lg lg:text-2xl">Jobs online</span>
+        </div>
+        <div class="text-center md:border-t-0 border-gray-100  p-8 lg:p-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+          </svg>
+          <span class="block font-semibold text-4xl mb-2 text-gray-800">1591</span>
+          <span class="text-lg lg:text-2xl">Members to help</span>
+        </div>
+        <div class="text-center border-t-2 md:border-r-2 border-gray-100 p-8 lg:p-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="block font-semibold text-4xl mb-2 text-gray-800">291</span>
+          <span class="text-lg lg:text-2xl">Bugs fixed</span>
+        </div>
+        <div class="text-center border-t-2 border-gray-100 p-8 lg:p-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="block font-semibold text-4xl mb-2 text-gray-800">1911</span>
+          <span class="text-lg lg:text-2xl">Dollars made</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 text-gray-600 px-6 lg:px-8 py-20 lg:py-32">
+    <div class="max-w-screen-lg mx-auto">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-medium text-center">What Apes Say</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-x-8 xl:gap-x-16 mt-6 lg:mt-8 xl:mt-12">
+        <div>
+          <div class="bg-white flex items-start space-x-4 p-8 rounded-md">
+            <p class="text-lg italic flex-1">"One morning, when Gregor Samsa woke from tr, he found himself It showed transformed in his bed
+              into a horrible vermin. Bad, for quick jigs vex! Fox nymphs."</p>
+          </div>
+          <div class="flex flex-row items-center space-x-4 mt-6 lg:mt-8 ">
+            <img src="/images/minimal/user4.jpg" alt="User placeholder" class="rounded-full w-16">
+            <div class="space-y-1">
+              <span class="text-lg font-semibold text-gray-700 block">Alan Gregory</span>
+              <span class="text-base font-semibold text-gray-500 block">CEO - Facebook</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="bg-white flex items-start space-x-4 p-8 rounded-md">
+            <p class="text-lg italic flex-1">"Two driven jocks help fax my big quiz. Quick, Baz, get my woven flaz Jack! " my brave ghost pled. Five quacking zephyrs jolt my wax bed."</p>
+          </div>
+          <div class="flex flex-row items-center space-x-4 mt-6 lg:mt-8 ">
+            <img src="/images/minimal/user1.jpg" alt="User placeholder" class="rounded-full w-16">
+            <div class="space-y-1">
+              <span class="text-lg font-semibold text-gray-700 block">Tanya Gilbert</span>
+              <span class="text-base font-semibold text-gray-500 block">CEO - Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          
+
+  <!-- footer -->
+  <footer class="bg-gray-800 text-gray-100 px-6 lg:px-8 py-6 md:py-12">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <div class="flex justify-center space-x-6 md:order-2">
+
+      <a href="https://twitter.com/TeddyCashLive" class="text-gray-400 hover:text-gray-100">
+        <span class="sr-only">Twitter</span>
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+        </svg>
+      </a>
+
+      <a href="https://medium.com/@teddy.cash" class="text-gray-400 hover:text-gray-100">
+        <span class="sr-only">Medium</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.10536 7.15269L3.34235 4.3053C3.29304 4.28091 3.24603 4.26941 3.20357 4.26941C3.14306 4.26941 3.0919 4.29292 3.0559 4.33583C3.02066 4.37779 3 4.43846 3 4.51436V16.7382C3 16.9463 3.15406 17.1926 3.34235 17.2856L8.66804 19.9169C8.74204 19.9535 8.81251 19.9708 8.87621 19.9708C9.05567 19.9708 9.18153 19.8336 9.18153 19.6033V7.27454C9.18153 7.22297 9.15204 7.17576 9.10536 7.15269Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8555 17.356L21.0306 19.9129C21.313 20.0524 21.544 19.9113 21.544 19.5992V8.22156L15.8555 17.356Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.72803 8.06775V14.3323L15.3633 17.1166L9.72803 8.06775Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.4085 7.12305L15.5343 4.22068C15.5076 4.20747 15.4786 4.20134 15.4495 4.20058C15.4476 4.20052 15.4457 4.19995 15.4438 4.19995C15.3724 4.19995 15.3013 4.2354 15.2628 4.29715L11.6421 10.1112L15.6838 16.6013L21.4649 7.31839C21.5077 7.24951 21.4817 7.1592 21.4085 7.12305Z" fill="currentColor"/>
+</svg>
+
+      </a>
+
+      <a href="https://github.com/teddy-cash/" class="text-gray-400 hover:text-gray-100">
+        <span class="sr-only">GitHub</span>
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+        </svg>
+      </a>
+
+      <a href="https://discord.gg/VBv2B5wh" class="text-gray-400 hover:text-gray-100">
+        <span class="sr-only">Discord</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.1073 10.5652C9.5113 10.5652 9.04077 11.0875 9.04077 11.7248C9.04077 12.362 9.52175 12.8844 10.1073 12.8844C10.7033 12.8844 11.1738 12.362 11.1738 11.7248C11.1843 11.0875 10.7033 10.5652 10.1073 10.5652ZM13.9238 10.5652C13.3278 10.5652 12.8572 11.0875 12.8572 11.7248C12.8572 12.362 13.3382 12.8844 13.9238 12.8844C14.5198 12.8844 14.9903 12.362 14.9903 11.7248C14.9903 11.0875 14.5198 10.5652 13.9238 10.5652Z" fill="#2EB6EA"/>
+<path d="M19.0055 1.80005H4.99433C3.81279 1.80005 2.85083 2.76115 2.85083 3.95209V18.0762C2.85083 19.2671 3.81279 20.2282 4.99433 20.2282H16.8515L16.2973 18.2956L17.6357 19.5387L18.9009 20.7088L21.149 22.6937V3.95209C21.149 2.76115 20.187 1.80005 19.0055 1.80005ZM14.9694 15.4436C14.9694 15.4436 14.593 14.9944 14.2793 14.5974C15.6491 14.2109 16.1719 13.3542 16.1719 13.3542C15.7432 13.6363 15.3354 13.8348 14.9694 13.9706C14.4466 14.19 13.9447 14.3362 13.4533 14.4198C12.4495 14.6078 11.5294 14.5556 10.7452 14.4093C10.1492 14.2944 9.63682 14.1273 9.20812 13.9601C8.96764 13.8661 8.70623 13.7512 8.44483 13.6049C8.41346 13.584 8.38209 13.5736 8.35073 13.5527C8.32981 13.5423 8.31936 13.5318 8.3089 13.5214C8.12069 13.4169 8.01613 13.3438 8.01613 13.3438C8.01613 13.3438 8.51802 14.1795 9.84595 14.5765C9.53226 14.9735 9.14539 15.4436 9.14539 15.4436C6.83459 15.3704 5.95628 13.8557 5.95628 13.8557C5.95628 10.4918 7.46196 7.76517 7.46196 7.76517C8.96763 6.63692 10.4001 6.66826 10.4001 6.66826L10.5047 6.79362C8.62258 7.33686 7.75473 8.16215 7.75473 8.16215C7.75473 8.16215 7.98476 8.03679 8.37164 7.8592C9.49044 7.3682 10.3792 7.23239 10.7452 7.20105C10.8079 7.1906 10.8602 7.18015 10.9229 7.18015C11.5607 7.09658 12.2822 7.07569 13.035 7.15926C14.0284 7.27417 15.0949 7.56668 16.1823 8.16215C16.1823 8.16215 15.3563 7.37864 13.5788 6.83541L13.7251 6.66826C13.7251 6.66826 15.1576 6.63692 16.6633 7.76517C16.6633 7.76517 18.169 10.4918 18.169 13.8557C18.169 13.8557 17.2802 15.3704 14.9694 15.4436Z" fill="currentColor"/>
+</svg>
+
+      </a>
+    </div>
+    <div class="mt-8 md:mt-0 md:order-1">
+      <p class="text-center text-base text-gray-400">
+        
+      </p>
+    </div>
+  </div>
+  </footer>
+</article>
+       
+       </div>
+       </div> 
+</body>
+</html>
