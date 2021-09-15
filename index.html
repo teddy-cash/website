@@ -7,7 +7,6 @@
   <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"  />
-  
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel=" stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
@@ -23,79 +22,60 @@
 
 
   <!-- hero and navigation -->
-  <header class="text-gray-800 bg-gray-50 px-6 lg:px-12 pt-8 pb-20 lg:pb-32 relative bg-cover">
+  <header class="text-gray-800 bg-gray-50 lg:px-12 pt-4 pb-10 relative bg-cover">
     <div class="relative z-10">
       <!-- navigation -->
       <div class="max-w-screen-xl mx-auto flex justify-between items-center relative" x-data="{ mobileMenu: false}">
         <a href="#">
-          <img class="h-16" src="teddy-cash-final.png" alt="Teddy Cash Logo">          
-        </a>        
-        <div class="hidden">
-        <nav class="hidden md:flex flex-col justify-center items-center p-8 md:p-0 space-y-4 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-8 font-semibold absolute top-16 md:top-0 left-0 w-full md:w-auto  md:relative bg-gray-200 md:bg-transparent">
-          <a href="#" class="hover:opacity-70">Home</a>
-          <a href="#" class="hover:opacity-70">Contact</a>
-        </nav>
-        <button class="w-9 p-1 rounded-md text-green-600 block md:hidden relative z-30 mt-1" @click="mobileMenu = !mobileMenu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-          </svg>
-        </button>
-        <div x-show="mobileMenu" x-transition:enter="transition ease-out duration-200"
-          x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-95"
-          class="absolute top-10 inset-x-0 py-2 ransition transform origin-top-right z-50 w-full md:hidden">
-              <nav class="rounded-lg shadow-lg bg-white p-3 transform">
-                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Home</a>
-                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Services</a>
-                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Pricing</a>
-                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Blog</a>
-                <a href="#" class="hover:opacity-70 block px-6 py-3 font-semibold border-blue-50 border-b">Contact</a>
-                <a href="#" class="hover:opacity-70 block px-6 py-3 font-bold border-blue-50 border-b">Sign in</a>
-              </nav>
-          </div>
-        </div>
+          <img class="h-24" src="teddy-cash-final.png" alt="Teddy Cash Logo">          
+        </a>
+<!--         <nav class="invisible md:visible md:flex mr-20 flex-col justify-center items-center p-8 md:p-0 space-y-4 md:space-y-0 md:flex-row md:space-x-8 lg:space-x-8 font-semibold absolute top-16 md:top-0 left-0 w-full md:w-auto  md:relative bg-gray-200 md:bg-transparent">
+          <a href="#" class="hover:opacity-70">Pay</a>
+          <a href="#" class="hover:opacity-70">Borrow</a>
+          <a href="#" class="hover:opacity-70">Earn</a>
+          <a href="#" class="hover:opacity-70">Join</a>
+        </nav> -->
       </div>
       <!--/ navigation -->
       
       <!-- hero text -->
-      <div class="max-w-screen-md mx-auto text-left md:text-center mt-20 xl:mt-32 mb-20 xl:mb-32">
-        <h1 class="text-2xl md:text-3xl lg:text-5xl text-gray-800 font-medium">
-          Teddy Cash is a decentralized borrowing protocol with interest-free loans.
-        </h1>
-        <p class="text-xl lg:text-2xl text-gray-700 mt-6 lg:mt-10 max-w-xl mx-auto">Teddy Cash is a fork of the Liquity protocol for the Avalanche C-Chain.</p>
-        
+      <div class="max-w-screen-md md:mx-auto text-left ml-5 md:text-center mt-10 mb-20 xl:mb-20">
+        <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-medium">
+          <p class="leading-relaxed inline-flex">
+              Get more exposure with Teddy Cash. Deposit AVAX and receive Teddy USD (TSD) to buy more $MOONCOIN...or Lambos.</p>
+                </h3>
+                <p class="text-xl lg:text-2xl text-gray-700 mt-6 lg:mt-10 max-w-xl mx-auto">After you have made your gainz, return the
+                  TSD to get back your AVAX collateral.</p>
         <div class="flex flex-row space-x-2 md:justify-center mt-6 lg:mt-12">
-          <a href="https://frontends.teddy.cash" class="inline-block bg-green-700 font-semibold rounded-md py-4 px-5 lg:px-8 text-white mt-6">Launch App</a>          
-          <a href="https://docs.teddy.cash" class="inline-flex bg-transparent font-semibold rounded-md py-4 px-5 lg:px-8 text-gray-800 mt-6 space-x-2">
+          <a href="https://frontends.teddy.cash" class="inline-block bg-green-700 font-semibold rounded-md py-4 lg:px-8 px-4 text-white mt-6">Get Started</a>          
+          <a href="https://docs.teddy.cash" class="inline-flex bg-transparent font-semibold rounded-md py-4 lg:px-8 text-gray-800 mt-6 space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span>
-              Docs
+              How it works
             </span>
           </a>
         </div>
       </div>
+      <p class="text-xl lg:text-2xl text-gray-700 mt-6 lg:mt-10 max-w-xl mx-auto text-center">Teddy Cash is a decentralized borrowing
+        protocol with interest-free loans on <a href="https://www.avax.network/">Avalanche</a>. Powered by:</p>
+      <br />
       <!--/ hero text-->
 
       <!-- hero image -->
       <div class="max-w-screen-lg mx-auto mb-12 lg:mb-24 hidden">
         <img src="/images/minimal/xps-dpbXgTh0Lac-unsplash.jpg" alt="image placeholder" class="rounded-lg sahdow-lg  md:shadow-2xl">
       </div>
-      <!--/ hero image-->
-
-      <p class="text-center text-gray-400">
-        standing on the shoulders of giants:
-      </p>
+      
       <!-- logos -->
-      <div class="max-w-screen-lg mx-auto px-6 lg:px-8 xl:px-4 grid grid-cols-2 space-y-5 lg:grid-cols-5 gap-6 xl:gap-x-12">
+      <div class="max-w-screen-lg mx-auto lg:px-8 xl:px-4 grid grid-cols-2 space-y-5 lg:grid-cols-5 gap-6 xl:gap-x-12">
         <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="avalanche-logo.svg" alt="avalanche logo">
         <img class="h-8 md:h-12 p-0 self-end justify-self-center opacity-75" src="liquity.svg" alt="liquity logo">
         <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="metamask-logo.svg" alt="metamask logo">
         <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="pangolin-logo.svg" alt="pangolin logo">
-
+        <img class="h-8 md:h-12 p-1 self-end justify-self-center opacity-75" src="chainlink-logo.svg" alt="chainlink logo">
       </div>
       <!--/ logos -->
           
@@ -103,131 +83,42 @@
   <!--/ hero and navigation -->
 
   <!-- content block -->
-  <div class="bg-white px-6 lg:px-8 py-20 lg:py-32">
+  <!-- <div class="bg-white px-6 lg:px-8 py-20 lg:py-32">
+    <div class="text-4xl text-center mb-10">Team</div>
     <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-8 lg:gap-24 xl:gap-32 md:items-center">
       <div class="col-span-2 md:col-span-1 flex flex-row space-x-2">
-        <img src="teddy-cash-final.png" alt="image placeholder" class="h-64 rounded-lg align-center pl-24">
+        <div class="block ml-20">
+        <a href="https://twitter.com/mr__hello">
+        <img src="MrHello.webp" alt="image placeholder" class="h-64 align-center">
+        <div class="text-center">Mr. H💗ll0</div>
+        </a>
+        </div>
       </div>
-      <div class="col-span-2 md:col-span-1">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-medium mb-6 lg:mb-8">TSD: Algorithmic USD Stablecoin</h2>
-        <p class="text-xl lg:text-2xl text-gray-700">TSD is minted when users deposit AVAX as collateral and open troves. The mechanism for its price stability is described in detail in the excellent Liquity docs.</p>
-
-        <p class="text-xl lg:text-2xl text-gray-700 pt-8">
-          Contract: <a href="https://cchain.explorer.avax.network/address/0x4fbf0429599460D327BD5F55625E30E4fC066095" class="underline">0x4fbf0429599460D327BD5F55625E30E4fC066095</a>
-        </p>
+      <div class="col-span-2 md:col-span-1 flex flex-row space-x-2">
+        <div class="block">
+          <a href="https://twitter.com/TeddyCashLive">
+          <img src="SugarTeddy2.webp" alt="image placeholder" class="h-64 align-center">
+          <div class="text-center">S🍦garTeddy</a></div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ content block -->
-
-  <!-- content block -->
-  <div class="bg-gray-100 px-6 lg:px-8 py-20 lg:py-32">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-8 lg:gap-24 xl:gap-32 md:items-center">
-      <div class="col-span-2 md:col-span-1 flex flex-row space-x-2 order-1 md:order-2">
-        <img src="teddy-cash-final-unicorn.png" alt="image placeholder" class="h-64 rounded-lg align-center pl-24">
-      </div>
-      <div class="col-span-2 md:col-span-1 order-2 md:order-1">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-medium mb-6 lg:mb-8">TEDDY: Growth Token</h2>
-        <p class="text-xl lg:text-2xl text-gray-700">
-          Stake TEDDYs and earn TSD everytime someone opens a trove. Earn AVAX everytime someone redeems TSD. 
-Governance token for future versions of the protocol (the current smart contracts are immutable). 
-        </p>
-        <p class="text-xl lg:text-2xl text-gray-700 pt-8">
-          Contract: <a href="https://cchain.explorer.avax.network/address/0x094bd7B2D99711A1486FB94d4395801C6d0fdDcC"  class="underline">0x094bd7B2D99711A1486FB94d4395801C6d0fdDcC</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- content block -->
-
-  <!-- content block -->
-  <div class="bg-gray-50 px-6 lg:px-8 py-20 lg:py-32">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-4 gap-8 lg:gap-24 xl:gap-32 md:items-center">      
-      <div class="col-span-1 md:col-span-1">
-      </div>
-      <div class="col-span-2 md:col-span-2">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-medium mb-6 lg:mb-8">A Decentralized &  Immutable Protocol</h2>
-        <p class="text-xl lg:text-2xl text-gray-700">Teddy Cash works without governance. The smart contracts are immutable. No central UI necessary. </p>
-      </div>
-    </div>
-  </div>
-  <!--/ content block -->
-
-  <div class="hidden bg-white text-gray-700 px-6 lg:px-8 py-20 lg:py-32">
-    <div class="max-w-screen-md mx-auto text-left md:text-center">
-      <h2 class="text-3xl md:text-4xl lg:text-4xl text-gray-800 font-medium mb-6">Enjoy JobBoard's unique online features</h2>
-      <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
-        <div class="text-center md:border-r-2 border-gray-100 p-8 lg:p-12">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          <span class="block font-semibold text-4xl mb-2 text-gray-800">221</span>
-          <span class="text-lg lg:text-2xl">Jobs online</span>
-        </div>
-        <div class="text-center md:border-t-0 border-gray-100  p-8 lg:p-12">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-          </svg>
-          <span class="block font-semibold text-4xl mb-2 text-gray-800">1591</span>
-          <span class="text-lg lg:text-2xl">Members to help</span>
-        </div>
-        <div class="text-center border-t-2 md:border-r-2 border-gray-100 p-8 lg:p-12">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <span class="block font-semibold text-4xl mb-2 text-gray-800">291</span>
-          <span class="text-lg lg:text-2xl">Bugs fixed</span>
-        </div>
-        <div class="text-center border-t-2 border-gray-100 p-8 lg:p-12">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-20 md:w-20 inline-block text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <span class="block font-semibold text-4xl mb-2 text-gray-800">1911</span>
-          <span class="text-lg lg:text-2xl">Dollars made</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hidden bg-gray-100 text-gray-600 px-6 lg:px-8 py-20 lg:py-32">
-    <div class="max-w-screen-lg mx-auto">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-medium text-center">What Apes Say</h2>
-      
-      <div class="grid md:grid-cols-2 gap-12 lg:gap-x-8 xl:gap-x-16 mt-6 lg:mt-8 xl:mt-12">
-        <div>
-          <div class="bg-white flex items-start space-x-4 p-8 rounded-md">
-            <p class="text-lg italic flex-1">"One morning, when Gregor Samsa woke from tr, he found himself It showed transformed in his bed
-              into a horrible vermin. Bad, for quick jigs vex! Fox nymphs."</p>
-          </div>
-          <div class="flex flex-row items-center space-x-4 mt-6 lg:mt-8 ">
-            <img src="/images/minimal/user4.jpg" alt="User placeholder" class="rounded-full w-16">
-            <div class="space-y-1">
-              <span class="text-lg font-semibold text-gray-700 block">Alan Gregory</span>
-              <span class="text-base font-semibold text-gray-500 block">CEO - Facebook</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="bg-white flex items-start space-x-4 p-8 rounded-md">
-            <p class="text-lg italic flex-1">"Two driven jocks help fax my big quiz. Quick, Baz, get my woven flaz Jack! " my brave ghost pled. Five quacking zephyrs jolt my wax bed."</p>
-          </div>
-          <div class="flex flex-row items-center space-x-4 mt-6 lg:mt-8 ">
-            <img src="/images/minimal/user1.jpg" alt="User placeholder" class="rounded-full w-16">
-            <div class="space-y-1">
-              <span class="text-lg font-semibold text-gray-700 block">Tanya Gilbert</span>
-              <span class="text-base font-semibold text-gray-500 block">CEO - Google</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-          
 
   <!-- footer -->
   <footer class="bg-gray-800 text-gray-100 px-6 lg:px-8 py-6 md:py-12 md:pt-8 md:pb-16">
-  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6  lg:px-8">
-    <div class="flex justify-center space-x-6 md:order-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8 sm:hidden text-3xl text-center mb-5 text-gray-100 hover:text-gray-100">Join Us</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
+    <div class="flex justify-center md:space-x-6 space-x-2 md:order-2">
+      <p class="md:mr-5 text-3xl hidden md:block">Join us</p>
+      <a href="https://t.me/teddycashofficial" class="text-gray-400 hover:text-gray-100">
+      <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24">
+        <path
+          d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z">
+        </path>
+      </svg>
+    </a>
       <a href="https://twitter.com/TeddyCashLive" class="text-gray-400 hover:text-gray-100">
         <span class="sr-only">Twitter</span>
         <svg class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

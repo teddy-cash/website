@@ -1,0 +1,12 @@
+{
+  "name": "teddy-website",
+  "version": "1.0.0",
+  "description": "Teddy Cash website",
+  "main": "index.js",
+  "repository": "git@github.com:teddy-cash/website.git",
+  "author": "Mr.Hello",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^12.0.1"
+  }
+}
